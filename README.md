@@ -1,16 +1,109 @@
-# React + Vite
+🚗⚡ AI-Based System Conversion from Conventional Engine to Electric Vehicles
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project aims to develop an AI-assisted system that helps users analyze conventional Internal Combustion Engine (ICE) vehicles and determine their feasibility for conversion into Electric Vehicles (EVs).
 
-Currently, two official plugins are available:
+The system provides intelligent recommendations such as battery capacity, motor power, estimated driving range, conversion cost, and future EV suitability analysis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🎯 Objective
 
-## React Compiler
+To build a user-friendly platform that simplifies the EV conversion process by analyzing vehicle specifications and generating optimized recommendations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ Technologies Used
+Frontend
+React.js
+Vite
+Tailwind CSS
+Backend
+Python
+Flask
+Flask-CORS
+Communication
+Axios
+📂 Project Architecture
+User
+ ↓
+React Frontend
+ ↓
+Vehicle Form
+ ↓
+Axios API Request
+ ↓
+Flask Backend
+ ↓
+Recommendation Engine
+ ↓
+JSON Response
+ ↓
+Recommendation Dashboard
+ ↓
+Graph Visualization
+✅ Features Implemented (Phase 1)
+Frontend
+Responsive Landing Page
+Navigation Bar
+Hero Section
+Vehicle Input Form
+Recommendation Dashboard
+Graph Visualization
+Backend
+Flask Server Setup
+API Endpoint Creation
+Vehicle Data Processing
+Recommendation Generation
+Integration
+React ↔ Flask Connection
+Axios API Communication
+End-to-End Testing
+📥 User Inputs
 
-## Expanding the ESLint configuration
+The user provides:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vehicle Model
+Vehicle Type
+Vehicle Weight
+Engine Capacity (CC)
+Vehicle Age
+Daily Distance Travelled
+Budget
+📤 Current Outputs
+
+The system currently generates:
+
+Battery Capacity Recommendation
+Motor Power Recommendation
+Estimated EV Range
+Estimated Conversion Cost
+Conversion Feasibility
+⚙️ Current Logic
+
+At present, the system uses a rule-based recommendation engine with engineering assumptions.
+
+Example:
+
+Battery Capacity = Vehicle Weight / 50
+
+Motor Power = Engine Capacity / 25
+
+Estimated Range = Battery × 8
+
+Conversion Cost = Battery × 12000
+
+Note: This is an initial prototype and will later be upgraded to a Machine Learning-based AI model.
+
+🧪 Testing Status
+Successfully Completed
+✅ Frontend Development
+✅ Backend Development
+✅ React-Flask API Integration
+✅ Recommendation Generation
+✅ Graph Visualization
+✅ End-to-End System Testing
+🚀 Future Enhancements
+EV Suitability Score
+Battery Type Recommendation
+Charging Time Estimation
+Annual Fuel Savings
+CO₂ Emission Reduction Analysis
+Machine Learning Integration
+Dataset-based Prediction Models
