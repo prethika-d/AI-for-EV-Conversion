@@ -19,20 +19,32 @@ function VehicleForm({ onAnalyze }) {
   };
 const handleSubmit = () => {
 
-  if (
-    !formData.weight ||
-    !formData.engineCC ||
-    !formData.budget
-  ) {
+ if (
 
-    alert(
-      "Please fill Vehicle Weight, Engine Capacity and Budget."
-    );
+  !formData.model ||
 
-    return;
-  }
+  !formData.vehicleType ||
 
-  onAnalyze(formData);
+  !formData.weight ||
+
+  !formData.engineCC ||
+
+  !formData.age ||
+
+  !formData.dailyDistance ||
+
+  !formData.budget
+
+ ) {
+
+   alert("Please fill all fields");
+
+   return;
+
+ }
+
+ onAnalyze(formData);
+
 };
   return (
     <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8">
